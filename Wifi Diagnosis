@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+public class WifiDiagnosisTest {
+	public static void main (String [] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		String ans;
+		System.out.println("If you have having trouble with your Wifi, this Wifi Diagnosis might help.");
+		System.out.println("First, I want you to reboot your computer.\n" + "Are you able to connect to your wifi?");
+		ans = sc.nextLine();
+		switch (ans)
+		{
+		case "yes":
+			System.out.println("Congratulations, rebooting your computer seemed to work!");
+			break;
+			
+		case "no":
+			System.out.println("Second, I want you to reboot your router.");
+			System.out.println("Are you connected to your wifi now?");
+			ans = sc.nextLine();
+			
+		case "Yes":
+			System.out.println("Congratulations, making sure your cables are plugged in seemed to work!");
+			break;
+			
+		case "No":
+			System.out.println("Third, I want you to make sure that your cables to your router are plugged in \nfirmly and your router is getting power.");
+			System.out.println("Are you able to connect to your wifi now?");
+			ans = sc.nextLine();
+		case "y":
+			System.out.println("Congratulations, making sure everything is firmly plugged in seemed to work!");
+			break;
+			
+		case "n":	
+			System.out.println("Fourth, I want you to move your computer closer to your router.");
+			System.out.println("Are you able to connect to your wifi now?");
+			ans = sc.nextLine();
+		case "Y":
+			System.out.println("Congratulations, moving you computer closer to the router seemed to work!");
+			break;
+			
+		case "N":	
+			System.out.println("Lastly, now I want you to contact your ISP!");
+			
+			
+		}
+		
+	}
+}
+		
